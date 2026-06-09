@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Markify
 // @namespace   Violentmonkey Scripts
-// @version     1.0
+// @version     1.0.1
 // @match       *://*/*
 // @grant       none
 // @description Destaca múltiplos termos em qualquer página. F4 para abrir.
