@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @version     1.0.1
 // @match       *://*/*
-// @grant       none
+// @updateURL   https://raw.githubusercontent.com/seu-user/markify/main/markify.user.js
 // @description Destaca múltiplos termos em qualquer página. F4 para abrir.
 // ==/UserScript==
 
