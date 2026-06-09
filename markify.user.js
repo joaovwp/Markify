@@ -188,10 +188,19 @@
     ta.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') return;
       e.stopPropagation();
-      if (e.key === 'Enter' && e.ctrlKey) {
-        e.preventDefault();
+      //if (e.key === 'Enter' && e.ctrlKey) {
+      //  e.preventDefault();
+      //  renderLegend(highlight(parseTerms(ta.value)));
+      //}
+    });
+
+    let debounceTimer;
+
+    ta.addEventListener('input', function () {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
         renderLegend(highlight(parseTerms(ta.value)));
-      }
+      }, 300);
     });
 
     const leg = document.createElement('div');
@@ -199,7 +208,8 @@
 
     const hint = document.createElement('div');
     hint.id = 'mkf-hint';
-    hint.textContent = 'Ctrl+Enter buscar · Esc fechar';
+    //hint.textContent = 'Ctrl+Enter buscar · Esc fechar';
+    hint.textContent = 'Esc fechar';
 
     panel.appendChild(hdr);
     panel.appendChild(ta);
