@@ -15,8 +15,8 @@
 |---|---|
 | `F4` | Abre o painel |
 | `Esc` | Fecha o painel e limpa os destaques |
+|| Digite um termo por linha ou separe por vírgula. |
 
-Digite um termo por linha ou separe por vírgula.
 
 ## Compatibilidade
 
